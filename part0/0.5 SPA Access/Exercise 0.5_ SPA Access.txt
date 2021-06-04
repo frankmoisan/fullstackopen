@@ -1,0 +1,11 @@
+https://www.websequencediagrams.com/?lz=dGl0bGUgRXhlcmNpc2UgMC41OiBTUEEgQWNjZXNzCgpCcm93c2VyLT5TZXJ2ZXI6IEhUVFAgR0VUOiAvc3BhCgARBi0tPgAiBzogU2VuZCBIVE1MAB8dbWFpbi5jc3MALhMAEgkAXR8uagAqFAABGCBYSFI6IGRhdGEuanNvbgoK&s=default
+
+title Exercise 0.5: SPA Access
+
+Browser->Server: HTTP GET: /spa
+Server-->Browser: Send HTML
+Browser->Server: HTTP GET: /main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET: /spa.js
+Server-->Browser: spa.js
+Server-->Browser: XHR: data.json

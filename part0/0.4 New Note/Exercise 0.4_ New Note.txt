@@ -1,0 +1,19 @@
+https://www.websequencediagrams.com/?lz=dGl0bGUgRXhlcmNpc2UgMC40OiBOZXcgTm90ZQoKTm90ZSBsZWZ0IG9mIEJyb3dzZXI6IApVc2VyIGVudGVycyBuZXcgbm90ZSAKYW5kIGNsaWNrcyBTdWJtaXQKRW5kABcFCgoANQctPlNlcnZlcjogSFRUUCBQT1NUOiAvbmV3XwA-BVt7IGNvbnRlbnQ6ICJTb21lAFUFIiwgZGF0ZTogIjIwMjEtMDYtMDQifV0KAEUGAEQPUkVESVJFQwBSBW90ZQAdCC0-AIE1CVNlbmQgSFRNTAB-F0dFVDogL21haW4uY3NzAC4TABIJAB8hagAmGQAFFVhIUjogZGF0YS5qc29uAIJ3B292ZXIAgnEKUGFnZSByZWZyZXNoZWQgd2l0aACCeQkK&s=default
+
+title Exercise 0.4: New Note
+
+Note left of Browser: 
+User enters new note 
+and clicks Submit
+End note
+
+Browser->Server: HTTP POST: /new_note [{ content: "Some note", date: "2021-06-04"}]
+Server->Server: HTTP REDIRECT: /note
+Server-->Browser: Send HTML
+Browser->Server: HTTP GET: /main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET: /main.js
+Server-->Browser: main.js
+Server-->Browser: XHR: data.json
+
+Note over Browser: Page refreshed with new note

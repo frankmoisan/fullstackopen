@@ -1,0 +1,8 @@
+https://www.websequencediagrams.com/?lz=dGl0bGUgRXhlcmNpc2UgMC42OiBTUEEgTmV3IE5vdGUKCk5vdGUgb3ZlciBCcm93c2VyOiBVc2VyIGNyZWF0ZXMgbm90ZSBhbmQgY2xpY2tzIFN1Ym1pdAoAJgctPlNlcnZlcjogSFRUUCBQT1NUOiAvbmV3X25vdGVfc3BhIFt7IlRoaXMgaXMgYSBuZXcATQUiLCBkYXRlOiAiMjAyMS0wNi0wNCJ9XQoASAYtLT4AgQQJAFMFMjAxICIAgSUFUmVjZWl2ZWQiIFN0YXR1cwCBLBRQYWdlIGRpc3BsYXlzAGoJCg&s=default
+
+title Exercise 0.6: SPA New Note
+
+Note over Browser: User creates note and clicks Submit
+Browser->Server: HTTP POST: /new_note_spa [{"This is a new note", date: "2021-06-04"}]
+Server-->Browser: HTTP 201 "Note Received" Status
+Note over Browser: Page displays new note
